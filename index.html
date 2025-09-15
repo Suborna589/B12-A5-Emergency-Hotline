@@ -30,10 +30,10 @@
     <a class="text-sm font-bold  text-[#006747] ml-2">Emergency <br> Service</a>
   </div>
  
-  <div class="navbar-end space-x-2">
-    <a class="btn  bg-[#41ff6b1a]">0 <img src="./assets/heart.png" class="w-[30px] h-[30px]" alt=""> </a>
-    <a class="btn bg-[#41ff6b1a] ">0 <img src="./assets/coin.png" alt="" class="w-[24px] h-[24px]" > </a>
-    <a class="btn bg-[#00a63e] rounded-4xl text-[#ffffff] px-[30px] py-[16px]">2<span>Copy</span></a>
+  <div class="navbar-end space-x-8">
+    <div class="btn  bg-[#41ff6b1a] " id="heart">0 <img src="./assets/heart.png" class="w-[30px] h-[30px]" alt=""> </div>
+     <span class="btn bg-[#41ff6b1a]" id="coins">100 <img src="./assets/coin.png" alt="" class=" w-[30px] h-[30px]"> </span>
+    <div class="btn bg-[#00a63e] rounded-4xl text-[#ffffff]  ">0<span>Copy</span></div>
   </div>
 </div> 
 
@@ -58,17 +58,19 @@
      <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
       />
    </div>
-   <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ <div class="heart-btn">
+    <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ </div>
   </div>
-   <h2>জাতীয় জরুরি সেবা</h2>
+   <h2 id="card-title-1">জাতীয় জরুরি সেবা</h2>
     <h3>National Emergency Service</h3> 
-    <p>999</p>
+    <p id="card-number-1">999</p>
     <p>সার্বজনীন</p>
 <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
       <div class="btn text-[#5c5c5c] w-[180px]"><i class="fa-regular fa-copy"></i>Copy</div>
-      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff]"><i class="fa-solid fa-phone"></i>Call</div>
+      <div class="btn  w-[180px] bg-[#00a63e] text-[#ffffff] calls-btn " id="cart-btn-1"><i class="fa-solid fa-phone" ></i>Call</div>
     </div>
   </div>
 </div>
@@ -78,7 +80,9 @@
      <img src="./assets/emergency.png" class="w-[24px] h-[24px]  " 
       />
    </div>
-   <i class="fa-regular fa-heart"></i>
+  <div class="heart-btn">
+    <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ </div>
   </div>
    <h2>পুলিশ</h2>
     <h3>police</h3> 
@@ -88,7 +92,7 @@
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
       <div class="btn text-[#5c5c5c] w-[180px]"><i class="fa-regular fa-copy"></i>Copy</div>
-      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff]"><i class="fa-solid fa-phone"></i>Call</div>
+      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff] calls-btn "><i class="fa-solid fa-phone"></i>Call</div>
     </div>
   </div>
 </div>
@@ -98,7 +102,9 @@
      <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
       />
    </div>
-   <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+    <div class="heart-btn">
+    <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ </div>
   </div>
    <h2>ফায়ার সার্ভিস</h2>
     <h3>Faire Service</h3> 
@@ -108,7 +114,7 @@
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
       <div class="btn text-[#5c5c5c] w-[180px]"><i class="fa-regular fa-copy"></i>Copy</div>
-      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff]"><i class="fa-solid fa-phone"></i>Call</div>
+      <div class=" cart-call-btn btn w-[180px] bg-[#00a63e] text-[#ffffff] calls-btn"><i class="fa-solid fa-phone"></i>Call</div>
     </div>
   </div>
 </div>
@@ -118,7 +124,9 @@
      <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
       />
    </div>
-   <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ <div class="heart-btn">
+    <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ </div>
   </div>
    <h2>অ্যাম্বুলেন্স</h2>
     <h3>Ambulance</h3> 
@@ -128,7 +136,7 @@
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
       <div class="btn text-[#5c5c5c] w-[180px]"><i class="fa-regular fa-copy"></i>Copy</div>
-      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff]"><i class="fa-solid fa-phone"></i>Call</div>
+      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff] calls-btn"><i class="fa-solid fa-phone"></i>Call</div>
     </div>
   </div>
 </div>
@@ -138,7 +146,9 @@
      <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
       />
    </div>
-   <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ <div class="heart-btn">
+    <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ </div>
   </div>
    <h2>নারী ও শিশু সহায়তা</h2>
     <h3>Women and Child Support </h3> 
@@ -148,7 +158,7 @@
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
       <div class="btn text-[#5c5c5c] w-[180px]"><i class="fa-regular fa-copy"></i>Copy</div>
-      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff]"><i class="fa-solid fa-phone"></i>Call</div>
+      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff] calls-btn"><i class="fa-solid fa-phone"></i>Call</div>
     </div>
   </div>
 </div>
@@ -158,7 +168,9 @@
      <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
       />
    </div>
-   <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+   <div class="heart-btn">
+    <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ </div>
   </div>
    <h2>দুদক</h2>
     <h3>Anti-Corruption Commission</h3> 
@@ -168,7 +180,7 @@
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
       <div class="btn text-[#5c5c5c] w-[180px]"><i class="fa-regular fa-copy"></i>Copy</div>
-      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff]"><i class="fa-solid fa-phone"></i>Call</div>
+      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff] calls-btn"><i class="fa-solid fa-phone"></i>Call</div>
     </div>
   </div>
 </div>
@@ -178,7 +190,9 @@
      <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
       />
    </div>
-   <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ <div class="heart-btn">
+    <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ </div>
   </div>
    <h2>বিদ্যুৎ ব্যাহত</h2>
     <h3>Power Outage</h3> 
@@ -188,7 +202,7 @@
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
       <div class="btn text-[#5c5c5c] w-[180px]"><i class="fa-regular fa-copy"></i>Copy</div>
-      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff]"><i class="fa-solid fa-phone"></i>Call</div>
+      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff] calls-btn "><i class="fa-solid fa-phone"></i>Call</div>
     </div>
   </div>
 </div>
@@ -198,7 +212,9 @@
      <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
       />
    </div>
-   <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ <div class="heart-btn">
+    <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ </div>
   </div>
    <h2>বাংলাদেশ রেলওয়ে</h2>
     <h3>Bangladesh Railway</h3> 
@@ -208,7 +224,7 @@
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
       <div class="btn text-[#5c5c5c] w-[180px]"><i class="fa-regular fa-copy"></i>Copy</div>
-      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff]"><i class="fa-solid fa-phone"></i>Call</div>
+      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff] calls-btn "><i class="fa-solid fa-phone"></i>Call</div>
     </div>
   </div>
 </div>
@@ -218,7 +234,9 @@
      <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
       />
    </div>
-   <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+   <div class="heart-btn">
+    <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
+ </div>
   </div>
    <h2>ব্র্যাক</h2>
     <h3>BRAC</h3> 
@@ -227,8 +245,10 @@
  <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
-      <div class="btn text-[#5c5c5c] w-[180px]"><i class="fa-regular fa-copy"></i>Copy</div>
-      <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff]"><i class="fa-solid fa-phone"></i>Call</div>
+      <div class="btn text-[#5c5c5c] w-[180px]" ><i class="fa-regular fa-copy"></i>Copy</div>
+          <div class="btn w-[180px] bg-[#00a63e] text-[#ffffff] calls-btn "><i class="fa-solid fa-phone"></i>Call</div>
+
+    
     </div>
   </div>
 </div>
@@ -238,22 +258,36 @@
 
    <!-- call history section --> 
 
-   <section> 
+   <section class="bg-[#ffffff] w-[460px] h-[1140px] shadow-xl p-[24px] rounded-xl" > 
    <div class="flex justify-between items-center gap-44"> 
   <div> 
     <h2 class="font-medium text-xl "><i class="fa-regular fa-clock  pr-[10px]"></i>Call History</h2>
   </div>
-    <a class="btn font-semibold text-base rounded-4xl bg-[#00a63e] text-[#ffff] "> Clear</a>
+    <a class="btn font-semibold text-base rounded-4xl bg-[#00a63e] text-[#ffff] " id="btn-clear"> Clear</a> 
 
+   </div>  
+   
+   <div>
+    
    </div> 
 
+   <div id="cart-call-history"  >
+ 
+   </div> 
+
+    
+   <div id="current-time" class="hidden">
+
+   </div>
    
 
    </section>
 
 
 
-</div>
+</div> 
+
+<script src="./script/index.js"></script>
  
     
 </body>
