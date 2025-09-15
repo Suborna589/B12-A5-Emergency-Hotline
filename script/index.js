@@ -90,15 +90,32 @@ const heartBtn = document.getElementsByClassName("heart-btn")
 for( let heartButton of  heartBtn){
       heartButton.addEventListener('click',function(){ 
 
-        const heartIn = getElement('heart').innerText 
-        // console.log(heartIn); 
+        const heartIn = parseInt(getElement('heart').innerText)
+        console.log(heartIn); 
 
-        const heartIncrease = Number(heartIn) + 1;
+        const heartIncrease = heartIn + 1;
         getElement('heart').innerText = heartIncrease;
 
       })
 
 } 
+
+
+
+const copyBtn = document.getElementsByClassName("copy-btn")
+
+for(let copyButton  of  copyBtn){
+    copyButton.addEventListener("click",function(){
+    const callNumber = copyButton.parentNode.parentNode.parentNode.children[3].innerText
+  
+alert(`নম্বর কপি করা হয়েছে: ${callNumber}`) 
+
+const copyIn = parseInt(getElement("copy").innerText) 
+
+const copyIncrease = copyIn + 1;
+getElement("copy").innerText = copyIncrease;
+    })
+}
 
 
 
