@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 
          <!-- daisy ui cdn --> 
 
@@ -19,7 +23,7 @@
 
 </head>
 <body>
-<div class="navbar bg-base-100 shadow-sm max-w-[1920px] mx-auto">
+<div class="navbar bg-base-100 shadow-sm  md:max-w-[1920px] mx-auto sm:max-w-[640px]">
   <div class="navbar-start">
     <div class="flex gap-4">
       <div>
@@ -31,26 +35,26 @@
   </div>
  
   <div class="navbar-end space-x-8">
-    <div class="btn  bg-[#41ff6b1a] " id="heart">0 <img src="./assets/heart.png" class="w-[30px] h-[30px]" alt=""> </div>
-     <span class="btn bg-[#41ff6b1a]" id="coins">100 <img src="./assets/coin.png" alt="" class=" w-[30px] h-[30px]"> </span>
-    <div class="btn bg-[#00a63e] rounded-4xl text-[#ffffff]" id="copy">0 <span>Copy</span></div>
+    <div class="btn  bg-[#41ff6b1a] "><span  id="heart">0</span> <img src="./assets/heart.png" class="w-[30px] h-[30px]" alt=""> </div>
+     <span class="btn bg-[#41ff6b1a]"><span  id="coins">100</span> <img src="./assets/coin.png" alt="" class=" w-[30px] h-[30px]"> </span>
+    <div class="btn bg-[#00a63e] rounded-4xl text-[#ffffff]" ><span id="copy"> 0 </span> Copy</div>
   </div>
 </div> 
 
 <!-- Banner section -->
 <section  class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] max-w-[1930px] h-[239px] mx-auto  py-[12px] ">
 <div class=" text-center  text-[#ffffff]  ">
-    <img  src="./assets/logo-dark.png" alt="" class="w-[92px]  h-[92px] md:ml-[910px]  sm:ml-[490px]">
+    <img  src="./assets/logo-dark.png" alt="" class="w-[92px]  h-[92px] md:ml-[910px]  sm:ml-[280px] ">
   <h2 class="text-4xl font-semibold ">জরুরি সেবা ডিরেক্টরি</h2> 
   <p>Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
 </div>
 </section> 
 
 
-<div class="flex max-w-[1920px] mx-auto py-5  gap-6 bg-[#f5fff6]" >
+<div class="flex max-w-[1920px] mx-auto py-5  gap-6 bg-[#f5fff6] sm:flex-row items-center " >
 
   <!-- Call section --> 
-   <section class="grid grid-cols-3 m-[10px] ml-[44px] gap-10"> 
+   <section class="md:grid grid-cols-3 m-[10px] ml-[44px] gap-10  sm:flex-col"> 
 
     <div class="card bg-base-100 w-[437px] h-[360px] shadow-xl p-[15px] rounded-xl">
   <div class="flex justify-between items-center py-7">
@@ -62,10 +66,10 @@
     <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
  </div>
   </div>
-   <h2 id="card-title-1">জাতীয় জরুরি সেবা</h2>
-    <h3>National Emergency Service</h3> 
-    <p id="card-number-1">999</p>
-    <p>সার্বজনীন</p>
+   <h2 class="font-bold  text-2xl"   id="card-title-1">জাতীয় জরুরি সেবা</h2>
+    <h3 class="text-[#5c5c5c] text-lg">National Emergency Service</h3> 
+    <p  class="font-bold  text-2xl" id="card-number-1">999</p>
+    <p class="bg-gray-100  rounded-lg w-20 ml-4 p-1 text-[#5c5c5c] text-center">সার্বজনীন</p>
 <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
@@ -77,17 +81,17 @@
      <div class="card bg-base-100 w-[437px] h-[360px] shadow-xl p-[15px] rounded-xl">
   <div class="flex justify-between items-center py-7">
    <div class=" bg-[#ffe3e2] p-[10px] rounded-xl">
-     <img src="./assets/emergency.png" class="w-[24px] h-[24px]  " 
+     <img src="./assets/police.png" class="w-[24px] h-[24px]  " 
       />
    </div>
   <div class="heart-btn">
     <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
  </div>
   </div>
-   <h2>পুলিশ</h2>
-    <h3>police</h3> 
-    <p>999</p>
-    <p>পুলিশ</p>
+   <h2 class="font-bold  text-2xl">পুলিশ</h2>
+    <h3  class="text-[#5c5c5c] text-lg">police</h3> 
+    <p class="font-bold  text-3xl">999</p>
+    <p class="bg-gray-100  rounded-lg w-20 ml-4 p-1 text-[#5c5c5c] text-center">পুলিশ</p>
  <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
@@ -99,17 +103,17 @@
       <div class="card bg-base-100 w-[437px] h-[360px] shadow-xl p-[15px] rounded-xl">
   <div class="flex justify-between items-center py-7">
    <div class=" bg-[#ffe3e2] p-[10px] rounded-xl">
-     <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
+     <img src="./assets/fire-service.png" class="w-[32px] h-[32px]  " 
       />
    </div>
     <div class="heart-btn">
     <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
  </div>
   </div>
-   <h2>ফায়ার সার্ভিস</h2>
-    <h3>Faire Service</h3> 
-    <p>999</p>
-    <p>ফায়ার </p>
+   <h2 class="font-bold  text-2xl"> ফায়ার সার্ভিস</h2>
+    <h3  class="text-[#5c5c5c] text-lg">Faire Service</h3> 
+    <p class="font-bold  text-3xl">999</p>
+    <p class="bg-gray-100  rounded-lg w-20 ml-4 p-1 text-[#5c5c5c] text-center">ফায়ার </p>
  <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
@@ -121,17 +125,17 @@
      <div class="card bg-base-100 w-[437px] h-[360px] shadow-xl p-[15px] rounded-xl">
   <div class="flex justify-between items-center py-7">
    <div class=" bg-[#ffe3e2] p-[10px] rounded-xl">
-     <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
+     <img src="./assets/ambulance.png" class="w-[32px] h-[32px]  " 
       />
    </div>
  <div class="heart-btn">
     <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
  </div>
   </div>
-   <h2>অ্যাম্বুলেন্স</h2>
-    <h3>Ambulance</h3> 
-    <p>1994-999999</p>
-    <p>স্বাস্থ্য</p>
+   <h2 class="font-bold  text-2xl">অ্যাম্বুলেন্স</h2>
+    <h3  class="text-[#5c5c5c] text-lg">Ambulance</h3> 
+    <p class="font-bold  text-3xl">1994-999999</p>
+    <p class="bg-gray-100  rounded-lg w-20 ml-4 p-1 text-[#5c5c5c] text-center">স্বাস্থ্য</p>
   <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
@@ -150,10 +154,10 @@
     <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
  </div>
   </div>
-   <h2>নারী ও শিশু সহায়তা</h2>
-    <h3>Women and Child Support </h3> 
-    <p>109</p>
-    <p>সহায়তা</p>
+   <h2 class="font-bold  text-2xl">নারী ও শিশু সহায়তা</h2>
+    <h3  class="text-[#5c5c5c] text-lg">Women and Child Support </h3> 
+    <p class="font-bold  text-3xl">109</p>
+    <p class="bg-gray-100  rounded-lg w-20 ml-4 p-1 text-[#5c5c5c] text-center">সহায়তা</p>
 <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
@@ -172,10 +176,10 @@
     <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
  </div>
   </div>
-   <h2>দুদক</h2>
-    <h3>Anti-Corruption Commission</h3> 
-    <p>106</p>
-    <p>সার্বজনীন</p>
+   <h2 class="font-bold  text-2xl">দুদক</h2>
+    <h3  class="text-[#5c5c5c] text-lg">Anti-Corruption Commission</h3> 
+    <p class="font-bold  text-3xl">106</p>
+    <p class="bg-gray-100  rounded-lg w-20 ml-4 p-1 text-[#5c5c5c] text-center">সার্বজনীন</p>
   <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
@@ -194,10 +198,10 @@
     <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
  </div>
   </div>
-   <h2>বিদ্যুৎ ব্যাহত</h2>
-    <h3>Power Outage</h3> 
-    <p>999</p>
-    <p>বিদ্যুৎ</p>
+   <h2 class="font-bold  text-2xl">বিদ্যুৎ ব্যাহত</h2>
+    <h3  class="text-[#5c5c5c] text-lg">Power Outage</h3> 
+    <p class="font-bold  text-3xl">999</p>
+    <p class="bg-gray-100  rounded-lg w-20 ml-4 p-1 text-[#5c5c5c] text-center">বিদ্যুৎ</p>
   <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
@@ -209,17 +213,17 @@
      <div class="card bg-base-100 w-[437px] h-[360px] shadow-xl p-[15px] rounded-xl">
   <div class="flex justify-between items-center py-7">
    <div class=" bg-[#ffe3e2] p-[10px] rounded-xl">
-     <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
+     <img src="./assets/Bangladesh-Railway.png" class="w-[32px] h-[32px]  " 
       />
    </div>
  <div class="heart-btn">
     <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
  </div>
   </div>
-   <h2>বাংলাদেশ রেলওয়ে</h2>
-    <h3>Bangladesh Railway</h3> 
-    <p>999</p>
-    <p>রেলওয়ে</p>
+   <h2 class="font-bold  text-2xl">বাংলাদেশ রেলওয়ে</h2>
+    <h3  class="text-[#5c5c5c] text-lg">Bangladesh Railway</h3> 
+    <p class="font-bold  text-3xl">999</p>
+    <p class="bg-gray-100  rounded-lg w-20 ml-4 p-1 text-[#5c5c5c] text-center">রেলওয়ে</p>
   <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">
@@ -231,17 +235,17 @@
      <div class="card bg-base-100 w-[437px] h-[360px] shadow-xl p-[15px] rounded-xl">
   <div class="flex justify-between items-center py-7">
    <div class=" bg-[#ffe3e2] p-[10px] rounded-xl">
-     <img src="./assets/emergency.png" class="w-[32px] h-[32px]  " 
+     <img src="./assets/brac.png" class="w-[32px] h-[32px]  " 
       />
    </div>
    <div class="heart-btn">
     <i class="fa-regular fa-heart w-[24px] h-[24px]"></i>
  </div>
   </div>
-   <h2>ব্র্যাক</h2>
-    <h3>BRAC</h3> 
-    <p>16445</p>
-    <p>ব্র্যাক</p>
+   <h2 class="font-bold  text-2xl">ব্র্যাক</h2>
+    <h3  class="text-[#5c5c5c] text-lg">BRAC</h3> 
+    <p class="font-bold  text-3xl">16445</p>
+    <p class="bg-gray-100  rounded-lg w-20 ml-4 p-1 text-[#5c5c5c] text-center">ব্র্যাক</p>
  <div class="card-body"> 
    
     <div class=" flex justify-evenly gap-5 text-base font-normal ">

@@ -15,10 +15,10 @@ for(let callButton of callsBtn){
     callButton.addEventListener("click", function (){  
     
         const serviceName = callButton.parentNode.parentNode.parentNode.children[1].innerText
-        // console.log(serviceName);
+     
         const callNumber = callButton.parentNode.parentNode.parentNode.children[3].innerText
 
-        // console.log(callNumber); 
+   
         alert(`Calling ${serviceName} at ${callNumber}....`) 
 
             const coins = getElement("coins").innerText; 
@@ -44,7 +44,7 @@ for(let callButton of callsBtn){
 
 
 
-  const time = getElement("current-time").innerText= new Date().toLocaleTimeString()
+  const currentTime = getElement("current-time").innerText = new Date().toLocaleTimeString()
  
    callHistoryCart.innerHTML=
    `
@@ -59,7 +59,7 @@ for(let callButton of callsBtn){
   
     
     <h2>
-    ${time}
+    ${currentTime}
     </h2> 
     
  
@@ -133,69 +133,7 @@ callHistory.innerHTML = " "
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById("cart-btn-1")
-// .addEventListener("click", function(e){
-    
-
-//     const serviceName = getElement("card-title-1").innerText 
-//     const cardNumber = parseInt(getElement("card-number-1").innerText)
-   
-//     alert(`Calling ${serviceName} at ${cardNumber}`); 
-
-//     const coins = getElement("coins").innerText; 
-//     decreaseCoins = coins - 20; 
-
-//     getElement('coins').innerText =decreaseCoins 
-
-//     if(coins <= 20){
-//         alert("no more coins");
-//         return;
-//     } 
-
-
-//     const callHistory = getElement("cart-call-history");
-
-//     const callHistoryCart = document.createElement("div");
-
-//     const time = getElement("cart-call-history").innerText =
-//           new Date().toLocaleTimeString()
-
-//    callHistoryCart.innerHTML=
-//    `
-
-//    <div class="bg-[#fafafa] flex mt-5 w-[425px] h-[84px] pt-4 pl-4  shadow-lg gap-44 " > 
-   
-//       <div>
-//       <h2>${serviceName}</h2>
-//       <span>${cardNumber}</span>
-
-//     </div>
-   
-//       <h2> ${time}</h2>
-//    </div>
-     
-
-//    `;
-
-
-
-//     callHistory.append(callHistoryCart)
-// }); 
+ 
 
 
 
