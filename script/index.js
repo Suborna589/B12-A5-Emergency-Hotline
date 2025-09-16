@@ -49,7 +49,7 @@ for(let callButton of callsBtn){
    callHistoryCart.innerHTML=
    `
 
-   <div class="bg-[#fafafa] flex mt-5 w-[425px] h-[84px] pt-4 pl-4  shadow-lg gap-44 " > 
+   <div class="bg-[#fafafa] flex mt-5 w-[400px] h-[84px] pt-4 pl-4  shadow-lg gap-44 " > 
    
       <div>
       <h2>${serviceName}</h2>
